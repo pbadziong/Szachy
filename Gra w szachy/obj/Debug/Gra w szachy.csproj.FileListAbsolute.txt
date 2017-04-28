@@ -1,0 +1,8 @@
+D:\_STUDIA\_Projekty programming\Gra w szachy\Gra w szachy\bin\Debug\Gra w szachy.exe.config
+D:\_STUDIA\_Projekty programming\Gra w szachy\Gra w szachy\bin\Debug\Gra w szachy.exe
+D:\_STUDIA\_Projekty programming\Gra w szachy\Gra w szachy\bin\Debug\Gra w szachy.pdb
+D:\_STUDIA\_Projekty programming\Gra w szachy\Gra w szachy\obj\Debug\Gra w szachy.exe
+D:\_STUDIA\_Projekty programming\Gra w szachy\Gra w szachy\obj\Debug\Gra w szachy.pdb
+D:\_STUDIA\_Projekty programming\Gra w szachy\trunk\Gra w szachy\bin\Debug\Gra w szachy.exe.config
+D:\_STUDIA\_Projekty programming\Gra w szachy\trunk\Gra w szachy\obj\Debug\Gra w szachy.exe
+D:\_STUDIA\_Projekty programming\Gra w szachy\trunk\Gra w szachy\obj\Debug\Gra w szachy.pdb
