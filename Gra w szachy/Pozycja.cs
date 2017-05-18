@@ -35,7 +35,7 @@ namespace Gra_w_szachy
             }
         }
 
-        public int Y
+        public int b
         {
             get
             {

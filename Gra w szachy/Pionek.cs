@@ -1,17 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Gra_w_szachy
 {
-    class Pionek
+    class Krol
     {
-        internal object nazwa;
+        private string Nazwa = "Pionek";
 
-        public virtual bool CzyMozliwyRuch { get; }
-        public object kolor { get; internal set; }
-        public object Pole { get; internal set; }
+        public Krol(string kolor, Pozycja poz = null; 
+            base : (Nazwa, Color, poz);
+        
+
+        public virtual bool CzyMozliwyRuch(Pozycja nowaPozycja)
+        {
+            return true;
+        }
     }
 }

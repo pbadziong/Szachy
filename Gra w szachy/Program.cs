@@ -12,11 +12,21 @@ namespace Gra_w_szachy
         {
             Console.WriteLine("Gra w szachy");
 
-            Pozycja p = new Pozycja("C7");
+            Szachownica plansza = Szachownica.Instance;
 
+            Pozycja p = new Pozycja();
+
+            //zwracanie liczby figur na planszy
+            Console.WriteLine("Figury, ktore znajduja sie na planszy: ");
+            return Szachownica.Wyswietl();
+
+            int FiguryNaPlanszy = plansza.LiczFigury();
+            Console.WriteLine("Liczba figur, ktore sa na planszy: " + FiguryNaPlanszy);
+
+            //ruch pionków
             Krol k = new Krol();
             string nazwa = k.GetType().Name;
-            k.kolor = Figura.KOLOR_BIALY;
+            k.Color = Figura.Color;
             k.kolor = Figura.KOLOR_CZARNY;
 
             Console.WriteLine(k.ToString());
@@ -24,20 +34,19 @@ namespace Gra_w_szachy
             Figura f = k;
             Console.WriteLine(f.ToString());
 
-            Krolowa ka = new Krolowa();
+            Krol ka = new Krol();
             ka.kolor = Figura.KOLOR_BIALY;
             ka.kolor = Figura.KOLOR_CZARNY;
 
             Console.WriteLine(ka.ToString());
             ka.Pozycja = ka.kolor.ToString() + ka.nazwa.ToString();
 
-            Pionek p = new Pionek();
+            Krol p = new Krol();
             p.kolor = Figura.KOLOR_BIALY;
             p.kolor = Figura.KOLOR_CZARNY;
 
             p.Pole = p.kolor.ToString() + p.nazwa.ToString();
 
-            Console.WriteLine(p.C7);
         }
     }
 }

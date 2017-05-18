@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,21 +18,18 @@ namespace Gra_w_szachy
         }
         public Pozycja pozycja = null;
 
-        public static string KOLOR_BIALY = "Bialy";
-        public static string KOLOR_CZARNY = "Czarny";
-        public string kolor;
+        public string Color;
+        public delegate void ZmianaPozycji();
 
         protected Pozycja
 
         Pozycja
         {
-            get
-            {
-                return pozycja;
-            }
+            get { return pozycja; }
 
             set
             {
+                if (null != ZmianaPozycji) ZmianaPozycji();
                 pozycja = value;
             }
         }
@@ -49,9 +47,15 @@ namespace Gra_w_szachy
             this.pozycja = pozycja;
         }
 
-        public static implicit operator Figura(Krol v)
+        public void ZmianaPozycji()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("{Nazwa} zmienil pozycje");
         }
+
+        public string ToString()
+        {
+            return "Pionek: {Color} {Nazwa}";
+        }
+
     }
 }
