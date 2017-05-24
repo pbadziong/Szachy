@@ -11,7 +11,7 @@ namespace Gra_w_szachy
     {
         private string Nazwa = "Krolowa";
 
-        public Krol(string kolor, Pozycja poz = null; 
+        public Krolowa(string kolor, Pozycja poz = null; 
             base : (Nazwa, Color, poz);
         
 
